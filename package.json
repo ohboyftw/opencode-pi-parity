@@ -1,0 +1,12 @@
+{
+  "name": "opencode-pi-parity",
+  "version": "0.1.0",
+  "description": "Pi 1.0 features (virtual router model, decision tool, deferred tools, mid-conversation system messages) as an OpenCode v2 plugin",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/ohboyftw/opencode-pi-parity.git" },
+  "type": "module",
+  "exports": { ".": "./index.ts" },
+  "scripts": { "typecheck": "tsc -p ." },
+  "dependencies": { "@opencode/plugin": "2.0.22" },
+  "devDependencies": { "@types/node": "^22", "typescript": "^5" }
+}
