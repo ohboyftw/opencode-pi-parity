@@ -236,7 +236,8 @@ export async function installNotes(ctx: Context) {
           sessionID: context.sessionID,
           text: systemNote(text),
           description: "System note",
-          delivery: "queue",
+          // The tool runs mid-turn, so steer joins that turn; "queue" would start an extra one.
+          delivery: "steer",
         })
         return { content: "Noted." }
       },
